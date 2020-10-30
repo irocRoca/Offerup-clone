@@ -17,8 +17,8 @@ const Header = () => {
                     <input placeholder="Search Offerup" className={classes.input_search}></input>
                 </div>
                 <div className={classes.contain_location}>
-                    <span><i className={`fas fa-map-marker-alt ${classes.search_icon}`}></i></span>
-                    <input className={classes.input_location} placeholder="Nearby" style={{marginLeft: '2px', borderRadius: "0"}}></input> 
+                    <span className={classes.search_icon}><i className="fas fa-map-marker-alt"></i></span>
+                    <input className={classes.input_location} placeholder="Nearby" ></input> 
                     <button className={classes.btn}>GO</button>
                 </div>
             </div>

@@ -44,11 +44,9 @@
 .input_location {
   border: none;
   background: #008d6a;
-  padding-left: 40px;
-  color: white;
-  border-radius: 8px 8px;
   display: none;
   padding: 12px 12px 12px 40px;
+  margin-left: 2px;
 }
 
 .contain_location {
@@ -56,7 +54,8 @@
   display: none;
 }
 
-.search_icon {
+.search_icon,
+.location_icon {
   position: absolute;
   display: flex;
   align-items: center;
@@ -68,15 +67,6 @@
 .list {
   display: none;
   list-style-type: none;
-}
-
-.search_icon {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  color: white;
-  height: 100%;
-  margin: 0 13px;
 }
 
 .input:focus {

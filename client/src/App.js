@@ -1,4 +1,3 @@
-import Container from './components/Container';
 import Header from './components/Header'
 import Home from './pages/Home'
 import Details from './pages/Details'
@@ -7,6 +6,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Footer from './components/Footer';
 
 function App() {
 
@@ -14,10 +14,12 @@ function App() {
       <Header />
       <Router>
         <Switch>
-          <Route to="/item/:id" component={Details} exact/>
-          <Route to="/" component={Home} exact />
+          <Route path="/item/:id" exact component={Details}/>
+          <Route path="/" exact component={Home} />
+
         </Switch>
       </Router>
+      <Footer />
       </>
 
   );

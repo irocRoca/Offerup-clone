@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import classes from './Home.module.css'
 import Card from '../components/Card';
 import axios from '../config/axios'
+import Container from '../components/Container';
 
 const Home = () => {
     const [page, setPage] = useState(1);
@@ -42,6 +43,7 @@ const Home = () => {
     };
 
     return (
+        <Container >
         <div className={classes.main}>
             {loading ? <div>Loading...</div> : (
                 <>
@@ -49,6 +51,7 @@ const Home = () => {
                 </>)}
 
       </div>
+      </Container>
 
     )
 }
