@@ -1,0 +1,41 @@
+.item_link {
+  margin-bottom: 15px;
+}
+
+.item_container {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  /* margin: 10px 10px; */
+  cursor: pointer;
+  max-width: 250px;
+  overflow: hidden;
+  break-inside: avoid;
+}
+
+.item_container:hover {
+  background: #f4f4f4;
+}
+
+.image {
+  object-fit: cover;
+  max-width: 250px;
+}
+
+.information {
+  padding: 14px;
+  line-height: 25px;
+  color: #4a4a4a;
+}
+
+.title {
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.location {
+  color: rgb(131, 131, 131);
+  letter-spacing: 0.4px;
+  font-size: 14px;
+}

@@ -1,0 +1,36 @@
+.description {
+  padding: 1.2rem;
+  line-height: 28px;
+  color: #4a4a4a;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+}
+
+.location {
+  font-size: 16px;
+  font-weight: 500;
+  color: #00ab80;
+  margin-bottom: 0.5rem;
+}
+
+.time {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn {
+  padding: 0.8rem 1rem;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  border: none;
+  margin: 8px 0;
+  background: #00ab80;
+  color: white;
+  border-radius: 8px;
+  border: 1px solid #00ab80;
+}

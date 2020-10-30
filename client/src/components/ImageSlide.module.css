@@ -1,0 +1,45 @@
+/* .contain {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 78px;
+}
+
+.background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  width: 200px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+} */
+
+.background {
+  margin-top: 78px;
+  height: 80vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.image {
+  height: 80vw;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}

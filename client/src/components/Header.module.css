@@ -1,0 +1,152 @@
+.header {
+  background: linear-gradient(90deg, #00ab80, #00a980 50%, #026d6d);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  z-index: 100;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.logoImg {
+  height: 24px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.input_search {
+  border: none;
+  background: #008d6a;
+  color: white;
+  border-radius: 8px 0 0 8px;
+  padding: 12px 12px 12px 40px;
+}
+
+.input_search::placeholder,
+.input_location::placeholder {
+  color: white;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+.input_location {
+  border: none;
+  background: #008d6a;
+  padding-left: 40px;
+  color: white;
+  border-radius: 8px 8px;
+  display: none;
+  padding: 12px 12px 12px 40px;
+}
+
+.contain_location {
+  position: relative;
+  display: none;
+}
+
+.search_icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 40px;
+  margin: 0 13px;
+}
+
+.list {
+  display: none;
+  list-style-type: none;
+}
+
+.search_icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 100%;
+  margin: 0 13px;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+}
+
+.list_item {
+  padding: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 10px 16px;
+  color: white;
+  background: #00ab80;
+  border: none;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .btn {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .header {
+    height: 68px;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .logo {
+    display: inline-block;
+  }
+
+  .logoImg {
+    display: none;
+  }
+
+  .contain_search {
+    display: flex;
+    align-items: center;
+  }
+
+  .contain_search:last-child {
+    display: none;
+  }
+
+  .list {
+    display: flex;
+  }
+
+  .btn {
+    display: inline-block;
+  }
+  .contain_location {
+    display: inline-block;
+  }
+
+  .input_location {
+    display: inline-block;
+  }
+}

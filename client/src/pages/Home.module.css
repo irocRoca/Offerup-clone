@@ -1,0 +1,43 @@
+.main {
+  column-count: 6;
+  margin-top: 78px;
+}
+
+@media (max-width: 1600px) {
+  .main {
+    column-count: 5;
+  }
+}
+
+@media (max-width: 1350px) {
+  .main {
+    column-count: 4;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    margin-top: 68px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 530px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+}
