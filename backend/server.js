@@ -13,10 +13,12 @@ app.use(cors())
 
 mongoose.connect(process.env.MONGOURI, {useNewUrlParser: true, useUnifiedTopology: true}, () => console.log('connected to Mongo'))
 
+
 // Find Search in Items collection
-app.get('/items/search/:query', (req, res) => {
+app.get('/items/search', (req, res) => {
     // validate query first
     const query = req.params.query
+    console.log(query)
     Item.find({title: new RegExp(query, 'i') }, (err, data) => {
         if(err) return res.status(500).send(err);
         res.send(data)
@@ -33,6 +35,11 @@ app.post('/item/create', (req,res) => {
         res.status(500).send(err)
     })
 })
+
+// Get information from a specific item
+// app.get('/item/:id', (req ,res) => {
+
+// })
 
 app.get('/items', (req, res) => {
     // validate the page number

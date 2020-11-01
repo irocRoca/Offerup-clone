@@ -1,7 +1,7 @@
 import React from 'react'
-import ImageSlide from '../components/ImageSlide'
-import Container from '../components/Container'
-import ItemDetails from '../components/ItemDetails'
+import ImageSlide from '../components/ImageSlide/ImageSlide'
+import Container from '../components/Container/Container'
+import ItemDetails from '../components/ItemDetails/ItemDetails'
 
 const Details = () => {
     return (

@@ -74,10 +74,15 @@
   border-bottom: 1px solid white;
 }
 
-.list_item {
+.list li {
   padding: 1.2rem;
   color: white;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.list li:hover {
+  color: lightblue;
 }
 
 .btn {

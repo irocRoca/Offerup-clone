@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import classes from './Home.module.css'
-import Card from '../components/Card';
+import Card from '../components/Card/Card';
 import axios from '../config/axios'
-import Container from '../components/Container';
+import Container from '../components/Container/Container';
 
 const Home = () => {
     const [page, setPage] = useState(1);

@@ -1,8 +1,17 @@
-import React from 'react'
-import { Hamburger } from './Hamburger';
+import React, { useState } from 'react'
+import { Hamburger } from '../Hamburger/Hamburger';
+import Login from '../Login';
+import Modal from '../Modal';
+import Signup from '../Signup';
 import classes from './Header.module.css';
+import Listitem from '../ListItem'
 
 const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const handleClick = (e) =>{
+        setIsOpen(true);
+    }
+
     return (
         <div className={classes.header}>
             <div>
@@ -29,8 +38,8 @@ const Header = () => {
                 <ul className={classes.list}>
                     <li className={classes.list_item}>Sell</li>
                     <li className={classes.list_item}>About</li>
-                    <li className={classes.list_item}>Log In</li>
-                    <li className={classes.list_item}>Sign Up</li>
+                    <Listitem Component={Login} text="Log in"/>
+                    <Listitem Component={Signup} text="Sign up"/>
                 </ul>
             </div>
         </div>
