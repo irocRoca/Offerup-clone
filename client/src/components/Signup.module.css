@@ -28,15 +28,22 @@
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 700;
+  margin-bottom: 8px;
+  display: inline-block;
 }
 
 .input {
   width: 100%;
   font-size: 16px;
-  margin: 10px 0;
+  margin-bottom: 8px;
   border: 1px solid #d8d8d8;
   border-radius: 5px;
   padding: 12px;
+}
+
+.error {
+  color: #e05666;
+  margin-bottom: 8px;
 }
 
 .btn {
@@ -49,6 +56,11 @@
   font-size: 18px;
   border-radius: 8px;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #006b50;
 }
 
 .text {
